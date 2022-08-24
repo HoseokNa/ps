@@ -1,5 +1,5 @@
 function solution(alp, cop, problems) {
-  const MAX = 300
+  const MAX = 150
   let maxAlp = -1
   let maxCop = -1
 
