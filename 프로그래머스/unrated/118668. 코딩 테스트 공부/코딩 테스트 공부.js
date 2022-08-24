@@ -24,8 +24,8 @@ function solution(alp, cop, problems) {
 
   let min = Infinity
 
-  for (let i = alp; i <= maxAlp + 1; i++) {
-    for (let j = cop; j <= maxCop + 1; j++) {
+  for (let i = alp; i <= maxAlp; i++) {
+    for (let j = cop; j <= maxCop; j++) {
       dp[i + 1][j] = Math.min(dp[i + 1][j], dp[i][j] + 1)
       dp[i][j + 1] = Math.min(dp[i][j + 1], dp[i][j] + 1)
 
