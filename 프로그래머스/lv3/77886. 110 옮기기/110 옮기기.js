@@ -3,12 +3,9 @@ function solution(s) {
 
   s.forEach((current) => {
     const remains = []
-    const array = current.split('')
     let count = 0
 
-    for (let i = 0; i < array.length; i++) {
-      const third = array[i]
-
+    for (const third of current) {
       if (remains.length < 2) {
         remains.push(third)
 
